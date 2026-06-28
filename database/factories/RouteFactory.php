@@ -1,0 +1,37 @@
+<?php
+
+namespace Database\Factories;
+
+use App\Models\Route;
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+/**
+ * @extends Factory<Route>
+ */
+class RouteFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+
+        $departureDatetime = $this->faker->dateTimeInInterval('now', '+3 days');
+        $arrivalDatetime = $this->faker->dateTimeInInterval($departureDatetime, '+5 hours');
+        $sourceAirportId = $this->faker->numberBetween(1, 76);
+
+        do {
+            $destinationAirportId = $this->faker->numberBetween(1, 76);
+        } while ($destinationAirportId === $sourceAirportId);
+
+        return [
+            'departure' => $departureDatetime,
+            'arrival' => $arrivalDatetime,
+            'airline_id' => $this->faker->numberBetween(1, 4),
+            'source_airport_id' => $sourceAirportId,
+            'destination_airport_id' => $destinationAirportId,
+        ];
+    }
+}

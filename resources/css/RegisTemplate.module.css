@@ -1,0 +1,22 @@
+.images{
+    background: url('../../public/storage/assets/login_register.png') no-repeat;
+    position: absolute;
+    background-color: #60cff4;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+}
+
+
+
+
+@media screen and (max-width:850px){
+   .images{
+        opacity: 0;
+   }
+}  
