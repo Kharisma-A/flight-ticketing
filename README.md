@@ -1,7 +1,6 @@
 # Flight Ticketing App
 
-Nama : Muhammad Kharisma Alkhadafi
-NPM : 233510780
+MUHAMMAD KHARISMA ALKHADAFI 233510780
 
 ## About
 This repository contains the source code for a flight ticketing application designed for seamless flight ticket reservations. The application allows users to search for flights, apply filters to refine search results, add baggage, proceed with payment, and manage cancellations. It also supports multiple passengers with different passenger types. The app includes an admin dashboard for efficient management, time scheduling features for deleting passenger records, and user authentication with login and register functionalities. Users receive email confirmations for successful payments and booking cancellations.
@@ -18,10 +17,6 @@ This repository contains the source code for a flight ticketing application desi
 - **User Authentication:** Secure login and register features for user accounts.
 - **Email Confirmations:** Users receive email confirmations for successful payments and cancellations.
 
-## Documentation Link
-[Watch the demo on YouTube](https://youtu.be/bRy6xld8zhI)
 
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
